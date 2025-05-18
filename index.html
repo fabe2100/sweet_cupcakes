@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <!--sat viewport to control the view on devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <!--stylsheet for social media icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js" defer></script>
+  <title>Sweet Cupcakes</title>
+
+</head>
+
+<body>
+
+  <!-- Top Navigation Menu -->
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!-- Site logo -->
+    <label class="logo"><a href="index.html"><img src="images/sweet-cupcakes-high-resolution-logo1.png"></a></label>
+    <!-- Navigation links -->
+    <ul>
+      <li><a class="active" href="index.html">HEM</a></li>
+      <li><a href="products.html">VÅRA CUPCAKES</a></li>
+      <li><a href="about.html">OM OSS</a></li>
+      <li><a href="contact.html">KONTAKT</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="./images/hanh-nguyen-j6DH45Bflho-unsplash.jpg" alt="colorful cupcakes" class="hero-image">
+    <div class="hero-content">
+      <h1 class="hidden">Välkommen till Sweet Cupcakes</h1>
+      <!--<p class="hidden">Upptäck våra läckra och unika cupcakes, perfekta för alla tillfällen. Beställ idag och gör din
+        dag lite sötare!</p>-->
+      <a href="products.html" class="hero-button">Utforska våra cupcakes</a>
+    </div>
+  </div>
+
+  <!--this section is for containing my text and three images in grids-->
+  <div class="grid-container">
+    <div class="content1">
+      <p>På Sweet Cupcakes finner ni flera smaker och variationer av cupcakes. Utöver de vanliga varianterna så
+        bakar vi även cupcakes för olika Events.<br />
+        Ni kan beställa cupcakes till föddelsedag,studenten, bröllop eller varför inte för företagsevents. För
+        större evanemeng beställ gärna en vecka innan så att vi hinner få din beställning klar i rätt tid.<br />
+        Ni finner våra produkter och priser under rubriken Cupcakes.
+      </p>
+      <p>Vi finns tillgängliga alla dagar i veckan centralt i Malmö. Besök oss gärna, Välkommen! </p>
+    </div>
+
+    <div class="img3 hidden">
+      <img src="./images/pexels-shvets-production-7525117.jpg" alt="cupcakes" style="width:100%;">
+
+    </div>
+    <div class="image-text-container hidden">
+      <div class="img3">
+        <img src="./images/meghan-rodgers-QpeoWEazLlM-unsplash.jpg" alt="cupcakes" style="width:100%;">
+      </div>
+
+    </div>
+    <div class="content1 hidden">
+      <p>Våra cupcakes är inte bara bakverk – de är små konstverk som är skapade med passion och omsorg. Vi använder
+        endast de finaste ingredienserna för att säkerställa att varje tugga är en njutning. Oavsett om du planerar ett
+        bröllop, en födelsedagsfest, ett företagsevent eller bara vill unna dig något gott, har vi något för dig.</p>
+      <p>Vi erbjuder ett brett utbud av smaker och dekorationer som kan anpassas efter dina önskemål. Våra cupcakes är
+        perfekta för att göra varje tillfälle speciellt. Besök oss i vår butik i centrala Malmö eller beställ online för
+        att få dina cupcakes levererade direkt till dörren. Vi ser fram emot att göra din dag lite sötare!</p>
+    </div>
+  </div>
+
+  <!--section for my footer with subscription form and social media icons-->
+  <div class="footer">
+    <form action="https://studenter.miun.se/~fabe2100/dt057g/projekt/subscribe" class="subscription-form">
+      <h2>Prenumerera på vårt nyhetsbrev</h2>
+      <p>Få de senaste nyheterna och erbjudandena direkt i din inkorg!</p>
+      <input type="text" name="name" class="form-input" placeholder="Ditt namn" required />
+      <input type="email" name="email" class="form-input" placeholder="Din e-postadress" required />
+      <button type="submit" class="form-button">Prenumerera</button>
+    </form>
+    <br />
+    <br />
+
+    © 2021 Sweet Cupcakes
+    <br />
+    <a href="#" class="fa fa-facebook"></a>
+
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
+  </div>
+
+ 
+</body>
+
+</html>

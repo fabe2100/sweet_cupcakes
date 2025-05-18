@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <!--sat viewport to control the view on devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js" defer></script>
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <!--stylsheet for social media icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Sweet Cupcakes</title>
+
+</head>
+
+<body>
+
+  <!-- Top Navigation Menu -->
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!-- Site logo -->
+    <label class="logo"><a href="index.html"><img src="images/sweet-cupcakes-high-resolution-logo1.png"></a></label>
+    <!-- Navigation links -->
+    <ul>
+      <li><a class="active" href="index.html">HEM</a></li>
+      <li><a href="products.html">VÅRA CUPCAKES</a></li>
+      <li><a href="about.html">OM OSS</a></li>
+      <li><a href="contact.html">KONTAKT</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="./images/ana-tavares-uUtQTi-UNRE-unsplash1.jpg" alt="colorful cupcakes" class="hero-image">
+    <div class="hero-content">
+      <h1 class="hidden">Kontakta Oss</h1>
+     
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <h2>Kontaktinformation</h2>
+    <div class="contact-info">
+     
+      <div class="contact-details">
+        <h3>Adress:</h3>
+        <p>Hamngatan, 211 22 Malmö</p>
+        <h3>Våra öppettider:</h3>
+        <p>Måndag-Fredag: 10-18<br>Lördag-Söndag: 11-17</p>
+        <h3>Telefonnummer:</h3>
+        <p>08-123 456</p>
+        <h3>Mailadress:</h3>
+        <p>fabe2100@student.miun.se</p>
+      </div>
+       <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.7155534404424!2d12.997942215877565!3d55.6069639805146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3fc22379f51%3A0x6bbb5f1214c64537!2sHamngatan%2016%2C%20211%2022%20Malm%C3%B6%2C%20Su%C3%A8de!5e0!3m2!1sfr!2sma!4v1634918175544!5m2!1sfr!2sma"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <form action="https://studenter.miun.se/~fabe2100/dt057g/projekt/subscribe" class="subscription-form">
+      <h2>Prenumerera på vårt nyhetsbrev</h2>
+      <p>Få de senaste nyheterna och erbjudandena direkt i din inkorg!</p>
+      <input type="text" name="name" class="form-input" placeholder="Ditt namn" required />
+      <input type="email" name="email" class="form-input" placeholder="Din e-postadress" required />
+      <button type="submit" class="form-button">Prenumerera</button>
+    </form>
+    <br />
+    <br />
+
+    © 2021 Sweet Cupcakes
+    <br />
+    <a href="#" class="fa fa-facebook"></a> 
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
+ 
+</body>
+
+</html>

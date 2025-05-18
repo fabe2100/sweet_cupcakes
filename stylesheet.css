@@ -1,0 +1,1495 @@
+/**/
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FCE4EC;
+    color: #5D4037;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+button {
+    background-color: #FFF9C4;
+    color: #5D4037;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #C8E6C9;
+}
+
+body {
+    margin: 0;
+    background-color: #f9fcfe;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Gör att body fyller hela höjden på skärmen */
+}
+
+.contact-section h2 {
+    color: #b07882;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    color: rgb(29, 29, 32);
+    line-height: 1.3em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Säkerställer att padding och border inkluderas i elementets bredd */
+}
+
+.article h1 {
+    text-align: center;
+    color: rgb(69, 85, 102);
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content max-content repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.wrapper {
+    flex: 1;
+    /* Gör att innehållet tar upp all tillgänglig plats ovanför footern */
+    padding-bottom: 0px;
+    /* Ta bort onödig padding */
+}
+
+.img3 {
+    padding-top: 10px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img3 img {
+    width: 50%;
+    /* Justera bildens bredd */
+    border-radius: 10px;
+    /* Rundade hörn för bilden */
+}
+
+/* Standardstil för menyn */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(231, 176, 186, 1);
+background-color: #b07882;
+    /* Opaque bakgrund */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    /* Smidig övergång för bakgrundsfärgen */
+}
+
+/* Genomskinlig stil för menyn */
+nav.transparent {
+    background: rgba(231, 176, 186, 0.7);
+    /* Genomskinlig bakgrund */
+}
+
+label.logo {
+    padding-left: 10px;
+    order: 1 0;
+    /* Se till att logotypen alltid är först */
+    margin-right: auto;
+    /* Tvinga logotypen att stanna till vänster */
+    display: flex;
+    /* Gör logotypen flexibel */
+    align-items: center;
+    /* Centrera bilden vertikalt */
+
+}
+
+label.logo img {
+    height: 50px;
+    /* Standardhöjd för logotypen */
+    width: auto;
+    /* Bevara bildens proportioner */
+}
+
+.checkbtn {
+    order: 2;
+    /* Placera hamburgermenyn efter logotypen */
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 0px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dölj menyn som standard på mobila enheter */
+nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #b07882;
+    /* Bakgrundsfärg för menyn */
+    position: absolute;
+    top: 60px;
+    /* Placera menyn under navigationsfältet */
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+#check {
+    display: none;
+}
+
+section {
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+/*header for mobile to be 100%*/
+.header {
+
+    width: 100%;
+    text-align: center;
+    /*map for mobile will have a width of 100%*/
+}
+
+iframe {
+    width: 100%;
+    /*those are images which i have in my grids for products.html*/
+}
+
+/*this will hide the menu of desktop and tablet*/
+.menu {
+    display: none;
+}
+
+/*this content1 is on my homepage , i sat the font size for mobile to be 16px*/
+.content1 {
+    max-width: 550px;
+    margin: auto;
+    height: auto;
+    color: rgb(69, 85, 102);
+    line-height: 30px;
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.footer {
+    background-color: #b07882;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    /* Tvingar footern att ligga längst ner */
+}
+
+.footer .subscription-form {
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+.footer .subscription-form input,
+.footer .subscription-form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons .fa {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background-color: #555;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons .fa:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+/*styling the social media icons */
+.fa {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+    border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    padding-right: 24px;
+    padding-left: 24px;
+
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-instagram {
+    background: #8a3ab9;
+}
+
+/*this article element is on my page of about.html  */
+.article {
+    max-width: 800px;
+    /* Begränsa textens bredd för bättre läsbarhet */
+    margin: 20px auto;
+    /* Centrera texten och lägg till marginaler */
+    padding: 20px;
+    /* Lägg till padding runt texten */
+    line-height: 1.8;
+    /* Förbättra läsbarheten med större linjehöjd */
+    font-size: 18px;
+    /* Anpassa textstorleken */
+    color: rgb(69, 85, 102);
+    /* Textfärg */
+    background-color: #f9f9f9;
+    /* Lägg till en ljus bakgrundsfärg */
+    border-radius: 10px;
+    /* Rundade hörn för en snyggare design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Lägg till en subtil skugga */
+    text-align: justify;
+    /* Justera texten för en snyggare layout */
+}
+
+/* Styling för rubriker i about.html */
+.article h1,
+.article h2,
+.article h3 {
+    text-align: center;
+    /* Centrera rubriker */
+    color: #b07882;
+    /* Rubrikfärg */
+    margin-bottom: 20px;
+    /* Lägg till mellanrum under rubriker */
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    /* Bevara bildens proportioner */
+    object-fit: cover;
+    /* Anpassa bilden utan att förvränga den */
+    border-radius: 10px;
+    /* Lägg till rundade hörn för en snyggare design */
+    padding-bottom: 15px;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Mellanrum mellan bild och text */
+    margin: 20px 0;
+    /* Marginal för att separera från andra sektioner */
+}
+
+.text3 {
+    flex: 1;
+    /* Gör texten flexibel för att fylla utrymmet */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    /* Textfärg */
+}
+
+.subscription-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.subscription-form h2 {
+    font-size: 24px;
+    color: #b07882;
+    margin-bottom: 10px;
+}
+
+.subscription-form p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.subscription-form .form-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subscription-form .form-input:focus {
+    border-color: #e9b2bc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(233, 178, 188, 0.5);
+}
+
+.subscription-form .form-button {
+    background-color: #b07882;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-form .form-button:hover {
+    background-color: #d19aa5;
+}
+
+/* Grid layout för produkterna */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+/* Styling för varje kort */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Bilden i kortet */
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Innehållet i kortet */
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    color: #b07882;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Hero-sektion */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero-products{
+    position: relative;
+    text-align: center;
+    color: white; 
+}
+.hero-image {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(231, 176, 186, 0.5); /* Soft pink transparent overlay */
+    z-index: 1;
+    border-radius: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Hero-sektion */
+.hero-content h1 {
+    font-size: 4rem; /* Öka rubrikstorleken */
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.85); /* Starkare skugga för bättre kontrast */
+    line-height: 1.2; /* Förbättra läsbarheten */
+    background-color: rgba(87, 42, 49, 0.6); /* Lätt bakgrundsfärg bakom texten */
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem; /* Öka textstorleken */
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75); /* Starkare skugga för bättre kontrast */
+    line-height: 1.5; /* Förbättra läsbarheten */
+    background-color: rgba(0, 0, 0, 0.25); /* Lätt bakgrundsfärg bakom texten */
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+
+/* Animation för Call to Action-knappen */
+.hero-button {
+    display: inline-block;
+    padding: 22px 44px;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #b07882;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+    /* Lägg till en pulserande animation */
+    white-space: nowrap;
+} 
+
+
+.hero-button:hover {
+    background-color: #d19aa5;
+    /* Ändra bakgrundsfärg vid hovring */
+    transform: scale(1.1);
+    /* Gör knappen större vid hovring */
+}
+
+/* Definiera pulserande animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* Ursprunglig storlek */
+        box-shadow: 0 0 10px rgba(231, 176, 186, 0.5);
+        /* Lätt skugga */
+    }
+
+    50% {
+        transform: scale(1.05);
+        /* Liten förstoring */
+        box-shadow: 0 0 20px rgba(231, 176, 186, 0.7);
+        /* Starkare skugga */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Tillbaka till ursprunglig storlek */
+        box-shadow: 0 0 10px rgba(231, 176, 186, 0.5);
+        /* Lätt skugga */
+    }
+}
+
+/* Kontaktsektion */
+.contact-section {
+    padding-top: 30px;
+    text-align: start;
+    color: rgb(69, 85, 102);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    /* Mellanrum mellan elementen */
+    margin-bottom: 60px;
+    padding: 20px;
+    
+}
+
+.contact-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    /* Begränsa bredden på innehållet */
+}
+
+.map-container {
+    flex: 1;
+    /* Gör att kartan tar upp lika mycket utrymme som texten */
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact-details {
+    flex: 1;
+    /* Gör att texten tar upp lika mycket utrymme som kartan */
+    max-width: 200px;
+}
+
+.contact-details h3 {
+    margin-top: 10px;
+    font-size: 23px;
+    color: #b07882;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #b07882;
+    /* Rubrikfärg */
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background-color: #b07882;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    /* Tvingar footern att ligga längst ner */
+    font-weight: bold;
+    padding-top: 40px;
+
+}
+
+.footer .subscription-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer .subscription-form input,
+.footer .subscription-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons .fa {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background-color: #555;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons .fa:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Flytta elementet lite nedåt */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    /* Smidig övergång */
+}
+
+/* Stil för synliga element */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Flytta tillbaka elementet till sin ursprungliga position */
+}
+
+/* Styling för Om Oss-sektionen */
+.about-section {
+    background-color: #f9f9f9;
+    /* Ljus bakgrundsfärg */
+    padding: 40px 20px;
+    /* Utrymme runt sektionen */
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* Gör layouten responsiv */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* Mellanrum mellan bild och text */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centrera innehållet */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 650px;
+    /* Begränsa bildens bredd */
+    border-radius: 10px;
+    /* Rundade hörn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtil skugga */
+}
+
+.about-text {
+    max-width: 600px;
+    /* Begränsa textens bredd */
+    line-height: 1.8;
+    /* Förbättra läsbarheten */
+    font-size: 18px;
+    color: rgb(69, 85, 102);
+    /* Textfärg */
+}
+
+.about-text h1 {
+    font-size: 32px;
+    color: #b07882;
+    /* Rubrikfärg */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    /* Mellanrum mellan stycken */
+    text-align: justify;
+    /* Justera texten för en snygg layout */
+}
+
+
+/* ==========================
+     Media Queries
+  ========================== */
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content {
+        display: block;
+        /* Dölj text och knapp på mobilskärmar */
+        max-width: 100%;
+        width: 350px;
+        height: auto;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(231, 176, 186, 0.5); /* Soft pink transparent overlay */
+        z-index: 1;
+        border-radius: 0;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+        z-index: 2;
+    }
+    
+    /* Hero-sektion */
+    .hero-content h1 {
+        font-size: 4rem; /* Öka rubrikstorleken */
+        margin-bottom: 20px;
+        font-weight: 900;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.85); /* Starkare skugga för bättre kontrast */
+        line-height: 1.2; /* Förbättra läsbarheten */
+        background-color: rgba(87, 42, 49, 0.6); /* Lätt bakgrundsfärg bakom texten */
+        display: inline-block;
+        padding: 20px 20px;
+        border-radius: 10px;
+      }
+    
+    /* Animation för Call to Action-knappen */
+    .hero-button {
+        display: inline-block;
+        padding: 22px 44px;
+        font-size: 1.8rem;
+        color: white;
+        background-color: #b07882;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        animation: pulse 2s infinite;
+        /* Lägg till en pulserande animation */
+    } 
+    
+    nav {
+        flex-wrap: wrap;
+        /* Tillåt innehållet att brytas till nästa rad */
+        height: 97px;
+        /* Anpassa höjden */
+
+    }
+
+    label.logo img {
+        height: 35px;
+        /* Gör logotypen mindre på mindre skärmar */
+    }
+    nav label.logo img {
+        height: 40px !important; /* Minska höjden på logotypen */
+        width: auto !important; /* Bevara proportionerna */
+      }
+    .checkbtn {
+        display: block;
+        /* Visa hamburgermenyn */
+        font-size: 22px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        /* Dölj menyn som standard */
+        flex-direction: column;
+        /* Gör menyn vertikal */
+        width: 100%;
+        /* Låt menyn ta hela bredden */
+        background: #b07882;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+
+    #check:checked~ul {
+        display: flex;
+        /* Visa menyn när checkboxen är markerad */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+        /* Utrymme mellan menyalternativen */
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        /* Gör texten större för bättre läsbarhet */
+
+    }
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        background-color: #d19aa5;
+        /* Lägg till en hovringseffekt */
+        border-radius: 5px;
+    }
+
+    .checkbtn {
+        display: block;
+        /* Visa hamburgermenyn */
+        font-size: 22px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        /* Dölj menyn som standard */
+        flex-direction: column;
+        width: 100%;
+        background: #b07882;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #check:checked~ul {
+        display: flex;
+        /* Visa menyn när checkboxen är markerad */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+    }
+
+    label.logo img {
+        height: 60px;
+        /* Gör logotypen större på större skärmar */
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        /* Gör menyns text något större */
+    }
+    .article {
+        padding: 15px;
+        /* Minska padding på mindre skärmar */
+        font-size: 16px;
+        /* Minska textstorleken för bättre läsbarhet */
+    }
+
+    .article-img {
+        width: 100%;
+        /* Se till att bilden fyller hela bredden */
+        height: auto;
+        /* Bevara proportionerna */
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+        /* Ytterligare minskning för små skärmar */
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 16px 22px;
+    }
+
+    /* Kontaktsektion */
+    .contact-section {
+        padding-top: 20px;
+        text-align: center;
+        color: rgb(69, 85, 102);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        /* Mellanrum mellan elementen */
+        margin-bottom: 250px;
+        padding: 20px;
+        
+
+    }
+    .contact-info {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* Begränsa bredden på innehållet */
+    }
+    .contact-section h2 {
+        font-size: 24px; /* Minska rubrikstorleken */
+        line-height: 1.2; /* Justera radavståndet för bättre läsbarhet */
+        padding: 10px; /* Lägg till lite padding runt rubriken */
+      }
+    .map-container {
+        flex: 1;
+        /* Gör att kartan tar upp lika mycket utrymme som texten */
+        display: flex;
+        justify-content: center;
+   
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        border: 0;
+        border-radius: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        /* Stapla bild och text vertikalt */
+    }
+
+    .about-text h1 {
+        font-size: 28px;
+        /* Minska rubrikstorleken */
+    }
+
+    .about-text {
+        font-size: 16px;
+        /* Minska textstorleken */
+    }
+    
+}
+
+/* Tablet (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+   
+    .hero-content h1 {
+        font-size: 1.6rem;
+        /* Minska rubrikstorleken på mindre skärmar */
+    }
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+    }
+    .hero-content p {
+        font-size: 1rem;
+        /* Minska textstorleken på mindre skärmar */
+    }
+
+    .hero-button {
+        font-size: 0.9rem;
+        /* Anpassa knappstorleken */
+        padding: 8px 16px;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+        /* Ytterligare minskning för små skärmar */
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 16px 22px;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(231, 176, 186, 0.5); /* Soft pink transparent overlay */
+        z-index: 1;
+        border-radius: 0;
+    }
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+        z-index: 2;
+    }
+    
+    /* Hero-sektion */
+    .hero-content h1 {
+        font-size: 1.9rem; /* Öka rubrikstorleken */
+        margin-bottom: 20px;
+        font-weight: 900;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.85); /* Starkare skugga för bättre kontrast */
+        line-height: 1.2; /* Förbättra läsbarheten */
+        background-color: rgba(87, 42, 49, 0.6); /* Lätt bakgrundsfärg bakom texten */
+        display: inline-block;
+        padding: 20px 30px;
+        border-radius: 10px;
+        width: 450px;
+      }
+    
+    /* Animation för Call to Action-knappen */
+    .hero-button {
+        display: inline-block;
+        padding: 15px 15px;
+        font-size: 1.5rem;
+        color: white;
+        background-color: #b07882;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        animation: pulse 2s infinite;
+        /* Lägg till en pulserande animation */
+    } 
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+    nav label.logo img {
+        height: 45px !important; /* Minska höjden på logotypen */
+        width: auto !important; /* Bevara proportionerna */
+      }
+    .contact-details {
+        text-align: center;
+    }
+    .contact-section {
+        padding-top: 20px;
+        text-align: center;
+        color: rgb(69, 85, 102);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        /* Mellanrum mellan elementen */
+        margin-bottom: 250px;
+        padding: 20px;
+
+
+    }
+    .map-container iframe {
+        width: 100%;
+        max-width: 1600px;
+        height: 350px;
+        border: 0;
+        border-radius: 10px;
+    }
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        background-color: #d19aa5;
+        /* Lägg till en hovringseffekt */
+        border-radius: 5px;
+    }
+
+    .checkbtn {
+        display: block;
+        /* Visa hamburgermenyn */
+        font-size: 22px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        /* Dölj menyn som standard */
+        flex-direction: column;
+        width: 100%;
+        background: #b07882;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #check:checked~ul {
+        display: flex;
+        /* Visa menyn när checkboxen är markerad */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+    }
+
+    label.logo img {
+        height: 60px;
+        /* Gör logotypen större på större skärmar */
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        /* Gör menyns text något större */
+    }
+
+    /*font-size for tablet will be 18px*/
+    .content1 {
+
+        color: rgb(69, 85, 102);
+        line-height: 30px;
+        padding: 10px;
+        padding-top: 15px;
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    /*i wanted this article image to go all the way in my tablet*/
+    .article-img {
+        width: 100%;
+    }
+
+    .article {
+        padding: 16px;
+        color: rgb(69, 85, 102);
+        margin: 10px;
+        font-size: 18px;
+
+    }
+
+    /*this styling is for my search box in tablet*/
+
+    .footer {
+        font-size: 18px;
+    }
+
+    /*the map in tablet will just have 75% instead of 100% which i had in mobile*/
+    iframe {
+        width: 75%;
+    }
+
+    #search {
+
+        width: 300px;
+        height: 44px;
+        border-radius: 5px;
+        float: right;
+        padding: 10px;
+        padding-top: 25px;
+        align-items: center;
+    }
+
+}
+
+/* Desktop (769px and above) */
+@media (min-width: 769px) {
+    .hero-content h1 {
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+
+    .hero-content {
+        display: block;
+        /* Visa text och knapp på tablet och desktop */
+    }
+    
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #b07882;
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        display: flex;
+        /* Visa menyn som en rad */
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        position: static;
+        /* Ta bort absolut positionering */
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        /* Flytta navigationslänkarna till höger */
+
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 10px;
+        /* Mellanrum mellan menyalternativen */
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        background-color: #d19aa5;
+        /* Lägg till en hovringseffekt */
+        border-radius: 5px;
+    }
+
+    .checkbtn {
+        display: none;
+        /* Dölj hamburgermenyn på större skärmar */
+    }
+
+    .grid {
+        margin-bottom: 0;
+        /* Se till att det inte finns någon onödig marginal */
+        padding-bottom: 0;
+        /* Ta bort eventuell padding längst ner */
+      
+    }
+
+    .footer {
+        margin-top: 0;
+        padding-top: 40px;
+        /* Ta bort onödig marginal ovanför footern */
+    }
+
+    .map-container iframe {
+        max-width: 800px;
+        /* Öka bredden */
+        height: 400px;
+        /* Öka höjden */
+    }
+
+    /*I have this grids in my homepage which contains my text and images and it will be 2 rows and 2 columns*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: min-content max-content repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        padding: 30px;
+
+    }
+   
+    .subscription-form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    /*this grid is for my images in my page products.html and it will contain 16 grids for 16 images*/
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+        align-items: stretch;
+        justify-items: center;
+        padding: 30px;
+    }
+
+    .grid img {
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+
+    }
+
+    .article {
+        display: flex;
+        /* Aktivera flexbox */
+        flex-direction: row;
+        /* Placera bild och text sida vid sida */
+        align-items: center;
+        /* Centrera vertikalt */
+        justify-content: center;
+        /* Centrera horisontellt */
+        gap: 20px;
+        /* Mellanrum mellan bild och text */
+        max-width: 1200px;
+        /* Begränsa bredden */
+        margin: 0 auto;
+        /* Centrera hela sektionen */
+        padding: 20px;
+        color: rgb(69, 85, 102);
+        font-size: 20px;
+    }
+
+    .article-img {
+        flex: 1;
+        /* Gör att bilden tar upp lika mycket utrymme som texten */
+        max-width: 100%;
+        /* Begränsa bildens bredd */
+        height: auto;
+        /* Bevara proportionerna */
+        width: 100%;
+    }
+
+    .article p {
+        flex: 2;
+        /* Gör att texten tar upp mer utrymme än bilden */
+        font-size: 18px;
+        /* Öka textstorleken för bättre läsbarhet */
+        line-height: 1.6;
+        /* Förbättra läsbarheten */
+    }
+
+    /*font-size for desktop will have 20px*/
+    .content1 {
+
+        color: rgb(69, 85, 102);
+        line-height: 30px;
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 20px;
+        text-align: start;
+
+    }
+
+    .img1 {
+        padding-top: 0px;
+    }
+
+    /*the map in desktop will take just 50% of the page*/
+    iframe {
+        width: 100%;
+    }
+
+    .img3 {
+        padding-top: 10px;
+        margin: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image {
+        width: 100%; /* Behåll full bredd */
+        height: 90vh; /* Sätt höjden till 60% av viewport-höjden */
+        object-fit: cover; /* Beskär bilden proportionellt för att fylla utrymmet */
+        border-radius: 0; /* Ta bort rundade hörn om det finns */
+    }
+}
